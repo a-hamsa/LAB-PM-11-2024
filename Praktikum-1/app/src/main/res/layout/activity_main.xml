@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA PRIBADI"
+        android:textColor="#7F5539"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="#7F5539"
+        android:layout_below="@+id/judul"/>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:src="@drawable/elvaalmamater"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6CCB2"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Nama: Elva Aprili Timang"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/foto"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Jenis Kelamin :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/radup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/jk">
+
+        <RadioButton
+            android:id="@+id/laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Laki-laki"
+            android:textSize="15sp"
+            android:layout_below="@+id/jk"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"/>
+
+        <RadioButton
+            android:id="@+id/perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Perempuan"
+            android:textSize="15sp"
+            android:layout_below="@+id/jk"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/haldisukai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Hal yang disukai :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/radup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"/>
+
+    <CheckBox
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Food"
+        android:textSize="16sp"
+        android:layout_below="@+id/haldisukai"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"/>
+
+    <CheckBox
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Money"
+        android:textSize="16sp"
+        android:layout_below="@+id/food"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-16dp"/>
+
+    <CheckBox
+        android:id="@+id/sidia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Si Dia"
+        android:textSize="16sp"
+        android:layout_below="@+id/money"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-16dp"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Masukan hal lainnya   "
+        android:layout_below="@+id/sidia"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#7F5539"
+        android:text="OKE"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/lingkaran"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="290dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1">
+        <LinearLayout
+            android:id="@+id/linearlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
