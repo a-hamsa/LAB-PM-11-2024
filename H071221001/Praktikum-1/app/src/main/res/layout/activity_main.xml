@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Data Pribadi"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/my" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Farah Dwi Aulia Chandrika"
+        android:background="#9880EE"
+        android:textColor="@color/black"
+        android:paddingVertical="10dp"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Jenis Kelamin : "
+        android:layout_marginStart="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Laki-laki"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Perempuan"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hal yang disukai : "
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membaca"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menonton"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lainnya"
+        android:layout_marginStart="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Masukkan hal lainnya"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_toRightOf="@id/editText"
+            />
+
+        <ScrollView
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:scrollbars="vertical"
+            android:layout_below="@id/btn1">
+
+            <TextView
+                android:id="@+id/Saved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                />
+        </ScrollView>
+    </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
