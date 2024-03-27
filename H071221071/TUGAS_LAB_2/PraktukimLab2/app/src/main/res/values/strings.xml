@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PraktukimLab2</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="next">Next</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="image_description">Image</string>
+
+</resources>
