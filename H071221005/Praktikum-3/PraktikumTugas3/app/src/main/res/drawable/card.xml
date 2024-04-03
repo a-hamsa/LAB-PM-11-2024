@@ -1,0 +1,13 @@
+<!-- background_shadow.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /> <!-- warna latar belakang -->
+    <corners android:radius="10dp" /> <!-- radius sudut -->
+    <stroke
+        android:width="2dp"
+        android:color="#A0A0A0" />
+    <padding
+        android:top="5dp"
+        android:bottom="5dp"
+        android:left="1dp"
+        android:right="1dp" />
+</shape>
