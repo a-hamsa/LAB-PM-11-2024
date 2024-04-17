@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:backgroundTint="@color/navy"
+    android:padding="10dp"
+    android:layout_marginVertical="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/li_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/li_iv_profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="20dp">
+                <TextView
+                    android:id="@+id/li_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="NAMA LENGKAP"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/li_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="USERNAME"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/li_ib_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_delete_outline_24"
+            android:background="@drawable/card"
+            android:backgroundTint="@color/red"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/li_tv_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus massa ut turpis mattis suscipit. Nam viverra ante in magna dapibus consectetur. Donec fringilla eros magna, a faucibus ipsum consequat quis. Sed sollicitudin, massa nec aliquet commodo, nunc nulla mattis quam, sit amet consequat nisi erat at justo."
+        android:textColor="@color/white"
+        android:layout_marginVertical="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/li_iv_post"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/card"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
