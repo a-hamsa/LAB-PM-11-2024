@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentContainerFl">
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/textViewKonten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Add Post"
+        android:fontFamily="sans-serif"
+        android:layout_marginHorizontal="12dp"
+        android:textFontWeight="800" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imgContentIv"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:padding="10dp"
+            android:layout_below="@id/textViewKonten"
+            android:src="@drawable/baseline_add_a_photo_24"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Description"
+            android:fontFamily="sans-serif"
+            android:layout_marginHorizontal="12dp"
+            android:textFontWeight="800" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descriptionEt"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginVertical="20dp"
+                android:layout_height="80dp"
+                android:hint="Description" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/postingBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Add Post"
+           android:layout_marginHorizontal="12dp"
+           android:textColor="@android:color/white"
+           android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
