@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/main_ll_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/list_item"
+            tools:itemCount="6"/>
+
+        <Button
+            android:id="@+id/main_btn_loadMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_file_download_24"
+            android:fontFamily="@font/kanit_medium"
+            android:textSize="15sp"
+            android:paddingHorizontal="70dp"
+            android:backgroundTint="@color/blue"
+            android:layout_below="@+id/rv_user"
+            android:text="Load More"/>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/main_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/main_ll_disconnect"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/kanit_medium"
+            android:text="Connection Lost"/>
+
+        <Button
+            android:id="@+id/main_btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_repeat_24"
+            android:fontFamily="@font/kanit_medium"
+            android:textSize="15sp"
+            android:paddingHorizontal="70dp"
+            android:backgroundTint="@color/red"
+            android:layout_below="@+id/rv_user"
+            android:text="Load More"/>
+
+    </LinearLayout>
+</RelativeLayout>
