@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     String name = inputnama.getText().toString();
                     String username = inputusername.getText().toString();
                     if (imageUri == null) {
-                        Toast.makeText(MainActivity.this, "Anda Belum Memilih Gambar!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Anda Belum Memilih Gambar!", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
