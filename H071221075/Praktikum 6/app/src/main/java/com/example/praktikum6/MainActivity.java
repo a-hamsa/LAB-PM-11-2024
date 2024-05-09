@@ -148,6 +148,8 @@ public class MainActivity extends AppCompatActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+
+                                loadMoreButton.setVisibility(View.GONE);
                                 userList.addAll(users);
                                 userAdapter.notifyDataSetChanged();
                                 currentPage++;
@@ -159,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+                            loadMoreButton.setVisibility(View.VISIBLE);
                             Toast.makeText(MainActivity.this, "Gagal memuat data", Toast.LENGTH_SHORT).show();
                         }
                     });
@@ -167,7 +170,6 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             isLoading = false;
-                            loadMoreButton.setVisibility(View.VISIBLE);
                             progressBar.setVisibility(View.GONE);
                             refreshButton.setVisibility(View.GONE);
                         }
