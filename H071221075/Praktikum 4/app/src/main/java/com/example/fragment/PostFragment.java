@@ -61,10 +61,10 @@ public class PostFragment extends Fragment {
                     Toast.makeText(getActivity(), "Isi data sebelum lanjut!", Toast.LENGTH_SHORT).show();
                 }
             }
-
+        });
         return view;
+    }
 
-    };
     private boolean validateInputs() {
         if (TextUtils.isEmpty(caption.getText().toString())) {
             caption.setError("Caption Tidak Boleh Kosong!");
