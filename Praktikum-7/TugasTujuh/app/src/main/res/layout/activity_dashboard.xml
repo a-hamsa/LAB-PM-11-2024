@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/tvselamatdatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnsetting"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="SETTING"/>
+
+</LinearLayout>
