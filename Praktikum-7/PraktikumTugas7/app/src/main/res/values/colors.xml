@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#222020</color>
+
+    <!--    LIGHT THEME ELEMEN-->
+    <color name="startLight">#F1EAFF</color>
+    <color name="centerLight">#E5D4FF</color>
+    <color name="endLigth">#DCBFFF</color>
+    <color name="btnLoginLight">#D0A2F7</color>
+    <color name="btnRegisterLight">#B982FB</color>
+    <color name="textMainLight">#D0A2F7</color>
+    <color name="textMainLight2">#B982FB</color>
+
+    <!--    DARK THEME ELEMEN-->
+    <color name="startDark">#030637</color>
+    <color name="centerDark">#300742</color>
+    <color name="endDark">#4C0439</color>
+    <color name="btnLoginDark">#4C0439</color>
+    <color name="btnRegisterDark">#300742</color>
+    <color name="textMainDark">#FFFFFF</color>
+    <color name="textMainDark2">#FFEC8B</color>
+</resources>
