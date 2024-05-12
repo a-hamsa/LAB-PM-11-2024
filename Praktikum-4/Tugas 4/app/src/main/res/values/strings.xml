@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">H071221082</string>
+    <string name="home_text">Home</string>
+    <string name="posting_text">Add Post</string>
+    <string name="profile_text">  Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
