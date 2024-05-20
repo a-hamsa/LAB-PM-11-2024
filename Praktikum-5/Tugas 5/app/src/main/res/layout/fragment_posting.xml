@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="35dp"
+    tools:context=".PostingFragment">
+
+    <TextView
+        android:id="@+id/profile_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posting"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#7D3CBD"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konten"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/input_konten"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/konten_bg"
+        android:textColor="@color/black"
+        android:hint="Masukkan Konten"
+        android:textColorHint="#ADABAB"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:inputType="textImeMultiLine"
+        android:layout_margin="10dp"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Gambar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_bg"
+        android:src="@drawable/baseline_photo_camera_24"
+        android:layout_margin="10dp"
+        >
+    </ImageView>
+
+    <Button
+        android:id="@+id/postingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POSTING"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#7D3CBD"
+        >
+    </Button>
+
+</LinearLayout>
